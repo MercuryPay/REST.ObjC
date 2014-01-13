@@ -32,9 +32,9 @@ Process the transaction with an NSMutableURLRequest.
 ```
     // Create a JSON POST
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.url]];
-	  [request setTimeoutInterval:30];
-	  [request setHTTPMethod:@"POST"];
-	  [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setTimeoutInterval:30];
+    [request setHTTPMethod:@"POST"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
     
     // Add Authorization header
