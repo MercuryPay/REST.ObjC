@@ -3,8 +3,6 @@ REST.ObjC
 
 MercuryPay REST Integraiton with Objective-C (with ARC)
 
-3 step process to integrate to Mercury Web Services.
-
 ##Step 1: Build Request with Key Value Pairs
   
 Create a NSMutableDictionary and add all the Key Value Pairs.
