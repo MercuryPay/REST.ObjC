@@ -58,7 +58,7 @@ Parse the Response using in the connection didReceiveData delegate.
 Approved transactions will have a CmdStatus equal to "Approved".
 
 ```
--(void) transactionDidFinish:(NSDictionary *)result {
+- (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     
     if ([result objectForKey:@"CmdStatus"]
       && [[result objectForKey:@"CmdStatus"] isEqualToString:@"Approved"]) {
