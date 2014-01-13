@@ -10,43 +10,52 @@ MercuryPay REST Integraiton with Objective-C (with ARC)
 Create a NSMutableDictionary and add all the Key Value Pairs.
   
 ```
-    NSMutableDictionary *dictionaryReq = [NSMutableDictionary new];
-    [dictionaryReq setObject:@"118725340908147" forKey:@"MerchantID"];
-    [dictionaryReq setObject:@"Credit" forKey:@"TranType"];
-    [dictionaryReq setObject:@"Sale" forKey:@"TranCode"];
-    [dictionaryReq setObject:@"12345" forKey:@"InvoiceNo"];
-    [dictionaryReq setObject:@"12345" forKey:@"RefNo"];
-    [dictionaryReq setObject:@"MercuryHelper 1.0.1" forKey:@"Memo"];
-    [dictionaryReq setObject:@"Allow" forKey:@"PartialAuth"];
-    [dictionaryReq setObject:@"MagneSafe" forKey:@"EncryptedFormat"];
-    [dictionaryReq setObject:@"Keyed" forKey:@"AccountSource"];
-    [dictionaryReq setObject:@"C756513CF498BBBF462FEDBFBF732DD8434ACB2B28325D0C7323204F639AC68FFD2769B49020E0CD" forKey:@"EncryptedBlock"];
-    [dictionaryReq setObject:@"9500030000040C20001C" forKey:@"EncryptedKey"];
-    [dictionaryReq setObject:@"OneTime" forKey:@"Frequency"];
-    [dictionaryReq setObject:@"RecordNumberRequested" forKey:@"RecordNo"];
-    [dictionaryReq setObject:@"1.01" forKey:@"Purchase"];
-    [dictionaryReq setObject:@"test" forKey:@"Name"];
-    [dictionaryReq setObject:@"MPS Terminal" forKey:@"TerminalName"];
-    [dictionaryReq setObject:@"MPS Shift" forKey:@"ShiftID"];
-    [dictionaryReq setObject:@"test" forKey:@"OperatorID"];
-    [dictionaryReq setObject:@"4 Corporate SQ" forKey:@"Address"];
-    [dictionaryReq setObject:@"30329" forKey:@"Zip"];
-    [dictionaryReq setObject:@"123" forKey:@"CVV"];
+    NSMutableDictionary *dictionary = [NSMutableDictionary new];
+    [dictionary setObject:@"Credit" forKey:@"TranType"];
+    [dictionary setObject:@"Sale" forKey:@"TranCode"];
+    [dictionary setObject:@"1001" forKey:@"InvoiceNo"];
+    [dictionary setObject:@"1001" forKey:@"RefNo"];
+    [dictionary setObject:@"GitHub REST.Obj" forKey:@"Memo"];
+    [dictionary setObject:@"1.00" forKey:@"Purchase"];
+    [dictionary setObject:@"OneTime" forKey:@"Frequency"];
+    [dictionary setObject:@"RecordNumberRequested" forKey:@"RecordNo"];
+    [dictionary setObject:@"MagneSafe" forKey:@"EncryptedFormat"];
+    [dictionary setObject:@"Swiped" forKey:@"AccountSource"];
+    [dictionary setObject:@"2F8248964608156B2B1745287B44CA90A349905F905514ABE3979D7957F13804705684B1C9D5641C" forKey:@"EncryptedBlock"];
+    [dictionary setObject:@"9500030000040C200026" forKey:@"EncryptedKey"];
 ```
   
 ##Step 2: Process the Transaction
 
-Create MercuryHelper object and call the transctionFromDictionary method with the NSMutalbeDictionary and merchant's password.
+Process the transaction with an NSMutableURLRequest.
 
 ```
-    MercuryHelper *mgh = [MercuryHelper new];
-    mgh.delegate = self;
-    [mgh transctionFromDictionary:dictionaryReq andPassword:@"xyz"];
+    // Create a JSON POST
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.url]];
+	  [request setTimeoutInterval:30];
+	  [request setHTTPMethod:@"POST"];
+	  [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
+    // Add Authorization header
+    NSString *credentials = [NSString stringWithFormat:@"%@:%@", self.merchantID, self.merchantPassword];
+    NSString *base64Credentials = [self base64String:credentials];
+    [request addValue:[@"Basic " stringByAppendingString:base64Credentials] forHTTPHeaderField:@"Authorization"];
+    
+    // Serialize NSDictionary to JSON data
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictionary options:NSJSONWritingPrettyPrinted error:nil];
+    
+    // Add JSON data to request body
+    [request setValue:[NSString stringWithFormat:@"%lu", (unsigned long)[jsonData length]] forHTTPHeaderField:@"Content-Length"];
+    [request setHTTPBody: jsonData];
+    
+    // Process request async
+    [NSURLConnection connectionWithRequest:request delegate:self];
 ```
 
 ##Step 3: Parse the Response
 
-Parse the Response using in the transactionDidFinish delegate.
+Parse the Response using in the connection didReceiveData delegate.
 
 Approved transactions will have a CmdStatus equal to "Approved".
 
