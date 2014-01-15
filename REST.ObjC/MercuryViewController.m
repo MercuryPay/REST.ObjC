@@ -22,7 +22,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+    
     // Configure settings to target
     self.url = @"https://w1.mercurycert.net/PaymentsAPI";
     self.merchantID = @"395347308=E2ETKN";
@@ -33,6 +33,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 - (IBAction)clickCreditSale:(id)sender {
@@ -130,7 +134,7 @@
     [NSURLConnection connectionWithRequest:request delegate:self];
 }
 
--(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+-(void) connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Error"
                                                    message: error.localizedDescription
                                                   delegate: self
