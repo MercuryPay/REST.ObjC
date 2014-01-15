@@ -13,6 +13,8 @@
 @property NSString *url;
 @property NSString *merchantID;
 @property NSString *merchantPassword;
+@property NSString *tranType;
+@property NSString *tranCode;
 
 @end
 
@@ -42,8 +44,6 @@
 - (IBAction)clickCreditSale:(id)sender {
 	
 	NSMutableDictionary *dictionary = [NSMutableDictionary new];
-    [dictionary setObject:@"Credit" forKey:@"TranType"];
-    [dictionary setObject:@"Sale" forKey:@"TranCode"];
     [dictionary setObject:@"1001" forKey:@"InvoiceNo"];
     [dictionary setObject:@"1001" forKey:@"RefNo"];
     [dictionary setObject:@"GitHub REST.Obj" forKey:@"Memo"];
@@ -55,14 +55,12 @@
     [dictionary setObject:@"2F8248964608156B2B1745287B44CA90A349905F905514ABE3979D7957F13804705684B1C9D5641C" forKey:@"EncryptedBlock"];
     [dictionary setObject:@"9500030000040C200026" forKey:@"EncryptedKey"];
     
-    [self processTransactionWithDictionary:dictionary];
+    [self processTransactionWithDictionary:dictionary andResource:@"/Credit/Sale"];
 }
 
 - (IBAction)clickCreditReturn:(id)sender {
     
     NSMutableDictionary *dictionary = [NSMutableDictionary new];
-    [dictionary setObject:@"Credit" forKey:@"TranType"];
-    [dictionary setObject:@"Return" forKey:@"TranCode"];
     [dictionary setObject:@"1002" forKey:@"InvoiceNo"];
     [dictionary setObject:@"1002" forKey:@"RefNo"];
     [dictionary setObject:@"GitHub REST.Obj" forKey:@"Memo"];
@@ -74,13 +72,11 @@
     [dictionary setObject:@"2F8248964608156B2B1745287B44CA90A349905F905514ABE3979D7957F13804705684B1C9D5641C" forKey:@"EncryptedBlock"];
     [dictionary setObject:@"9500030000040C200026" forKey:@"EncryptedKey"];
     
-    [self processTransactionWithDictionary:dictionary];
+    [self processTransactionWithDictionary:dictionary andResource:@"/Credit/Return"];
 }
 
 - (IBAction)clickGiftSale:(id)sender {
     NSMutableDictionary *dictionary = [NSMutableDictionary new];
-    [dictionary setObject:@"PrePaid" forKey:@"TranType"];
-    [dictionary setObject:@"Sale" forKey:@"TranCode"];
     [dictionary setObject:@"1003" forKey:@"InvoiceNo"];
     [dictionary setObject:@"1003" forKey:@"RefNo"];
     [dictionary setObject:@"GitHub REST.Obj" forKey:@"Memo"];
@@ -90,7 +86,7 @@
     [dictionary setObject:@"C8C8F9536826D5450E734953206E7F4DC6812C6858037F5ABF23D9F83F948AF7" forKey:@"EncryptedBlock"];
     [dictionary setObject:@"9012090B06349B000056" forKey:@"EncryptedKey"];
     
-    [self processTransactionWithDictionary:dictionary];
+    [self processTransactionWithDictionary:dictionary andResource:@"/PrePaid/Sale"];
 }
 
 - (IBAction)clickGiftReturn:(id)sender {
@@ -106,13 +102,14 @@
     [dictionary setObject:@"C8C8F9536826D5450E734953206E7F4DC6812C6858037F5ABF23D9F83F948AF7" forKey:@"EncryptedBlock"];
     [dictionary setObject:@"9012090B06349B000056" forKey:@"EncryptedKey"];
     
-    [self processTransactionWithDictionary:dictionary];
+    [self processTransactionWithDictionary:dictionary andResource:@"/PrePaid/Return"];
 }
 
-- (void) processTransactionWithDictionary:(NSDictionary *)dictionary {
+- (void) processTransactionWithDictionary:(NSDictionary *)dictionary andResource:(NSString *) resource {
    
     // Create a JSON POST
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.url]];
+    NSString *urlResource = [NSString stringWithFormat:@"%@%@", self.url, resource];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlResource]];
 	[request setTimeoutInterval:30];
 	[request setHTTPMethod:@"POST"];
 	[request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
