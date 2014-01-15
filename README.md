@@ -1,7 +1,7 @@
 REST.ObjC
 =========
 
-MercuryPay REST Integraiton with Objective-C (with ARC)
+MercuryPay REST Integration with Objective-C (with ARC)
 
 ##Step 1: Build Request with Key Value Pairs
   
