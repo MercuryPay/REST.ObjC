@@ -46,7 +46,7 @@
 	NSMutableDictionary *dictionary = [NSMutableDictionary new];
     [dictionary setObject:@"1001" forKey:@"InvoiceNo"];
     [dictionary setObject:@"1001" forKey:@"RefNo"];
-    [dictionary setObject:@"GitHub REST.Obj" forKey:@"Memo"];
+    [dictionary setObject:@"GitHub REST.ObjC" forKey:@"Memo"];
     [dictionary setObject:@"1.00" forKey:@"Purchase"];
     [dictionary setObject:@"OneTime" forKey:@"Frequency"];
     [dictionary setObject:@"RecordNumberRequested" forKey:@"RecordNo"];
@@ -63,7 +63,7 @@
     NSMutableDictionary *dictionary = [NSMutableDictionary new];
     [dictionary setObject:@"1002" forKey:@"InvoiceNo"];
     [dictionary setObject:@"1002" forKey:@"RefNo"];
-    [dictionary setObject:@"GitHub REST.Obj" forKey:@"Memo"];
+    [dictionary setObject:@"GitHub REST.ObjC" forKey:@"Memo"];
     [dictionary setObject:@"1.00" forKey:@"Purchase"];
     [dictionary setObject:@"OneTime" forKey:@"Frequency"];
     [dictionary setObject:@"RecordNumberRequested" forKey:@"RecordNo"];
@@ -79,7 +79,7 @@
     NSMutableDictionary *dictionary = [NSMutableDictionary new];
     [dictionary setObject:@"1003" forKey:@"InvoiceNo"];
     [dictionary setObject:@"1003" forKey:@"RefNo"];
-    [dictionary setObject:@"GitHub REST.Obj" forKey:@"Memo"];
+    [dictionary setObject:@"GitHub REST.ObjC" forKey:@"Memo"];
     [dictionary setObject:@"1.00" forKey:@"Purchase"];
     [dictionary setObject:@"MagneSafe" forKey:@"EncryptedFormat"];
     [dictionary setObject:@"Swiped" forKey:@"AccountSource"];
@@ -95,7 +95,7 @@
     [dictionary setObject:@"Return" forKey:@"TranCode"];
     [dictionary setObject:@"1004" forKey:@"InvoiceNo"];
     [dictionary setObject:@"1004" forKey:@"RefNo"];
-    [dictionary setObject:@"GitHub REST.Obj" forKey:@"Memo"];
+    [dictionary setObject:@"GitHub REST.ObjC" forKey:@"Memo"];
     [dictionary setObject:@"1.00" forKey:@"Purchase"];
     [dictionary setObject:@"MagneSafe" forKey:@"EncryptedFormat"];
     [dictionary setObject:@"Swiped" forKey:@"AccountSource"];
