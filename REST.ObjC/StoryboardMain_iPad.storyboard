@@ -137,12 +137,12 @@ Development    PRIMARY     https://w1.mercurycert.net/PaymentsAPI/</string>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="600" translatesAutoresizingMaskIntoConstraints="NO" id="xAh-JO-qfv">
                                 <rect key="frame" x="115" y="442" width="600" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Authentication occurs via HTTP Basic Auth using an HTTP authorization header.
+                                <string key="text">Authentication occurs via HTTP Basic Auth using an HTTP authorization header.
 Username: existing MerchantID Password: created and stored by Mercury
 Create string of [username]:[password]
 BASE64 encoded string
 Set Authorization header value to: “Basic [encoded string]"
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
