@@ -25,7 +25,7 @@
 {
     [super viewDidLoad];
     
-    // Configure settings to target
+    // Configure settings to target proper platform
     self.url = @"https://w1.mercurycert.net/PaymentsAPI";
     self.merchantID = @"395347308=E2ETKN";
     self.merchantPassword = @"123E2ETKN";
