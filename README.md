@@ -9,8 +9,6 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
   
 ```
     NSMutableDictionary *dictionary = [NSMutableDictionary new];
-    [dictionary setObject:@"Credit" forKey:@"TranType"];
-    [dictionary setObject:@"Sale" forKey:@"TranCode"];
     [dictionary setObject:@"1001" forKey:@"InvoiceNo"];
     [dictionary setObject:@"1001" forKey:@"RefNo"];
     [dictionary setObject:@"GitHub REST.Obj" forKey:@"Memo"];
