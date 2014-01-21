@@ -58,6 +58,9 @@ Approved transactions will have a CmdStatus equal to "Approved".
 ```
 - (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     
+    // Deserialize response from REST service
+    NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+
     if ([result objectForKey:@"CmdStatus"]
       && [[result objectForKey:@"CmdStatus"] isEqualToString:@"Approved"]) {
       
