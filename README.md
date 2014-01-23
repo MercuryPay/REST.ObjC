@@ -7,7 +7,7 @@ MercuryPay REST Integration with Objective-C (with ARC)
   
 Create a NSMutableDictionary and add all the Key Value Pairs.
   
-```
+```Objective-C
     NSMutableDictionary *dictionary = [NSMutableDictionary new];
     [dictionary setObject:@"1001" forKey:@"InvoiceNo"];
     [dictionary setObject:@"1001" forKey:@"RefNo"];
@@ -25,7 +25,7 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
 
 Process the transaction with an NSMutableURLRequest.
 
-```
+```Objective-C
     // Create a JSON POST
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.url]];
     [request setTimeoutInterval:30];
@@ -55,7 +55,7 @@ Parse the Response using in the connection didReceiveData delegate.
 
 Approved transactions will have a CmdStatus equal to "Approved".
 
-```
+```Objective-C
 - (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     
     // Deserialize response from REST service
