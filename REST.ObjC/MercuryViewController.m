@@ -20,7 +20,6 @@
 
 @implementation MercuryViewController
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -42,7 +41,7 @@
 }
 
 - (IBAction)clickCreditSale:(id)sender {
-	
+    
 	NSMutableDictionary *dictionary = [NSMutableDictionary new];
     [dictionary setObject:@"1001" forKey:@"InvoiceNo"];
     [dictionary setObject:@"1001" forKey:@"RefNo"];
@@ -129,9 +128,12 @@
     
     // Process request async
     [NSURLConnection connectionWithRequest:request delegate:self];
+    
+    [self setBtnState:NO];
+    
 }
 
--(void) connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+-(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Error"
                                                    message: error.localizedDescription
                                                   delegate: self
@@ -139,9 +141,11 @@
                                          otherButtonTitles:@"OK",nil];
     
     [alert show];
+    
+    [self setBtnState:YES];
 }
 
-- (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     
     // Deserialize response from REST service
     NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
@@ -161,6 +165,14 @@
     
     [alert show];
 
+     [self setBtnState:YES];
+}
+
+- (void)setBtnState:(BOOL) enabled {
+    _btnCreditSale.enabled = enabled;
+    _btnCreditReturn.enabled = enabled;
+    _btnGiftSale.enabled = enabled;
+    _btnGiftReturn.enabled = enabled;
 }
 
 // Base64 function taken from http://calebmadrigal.com/string-to-base64-string-in-objective-c/
