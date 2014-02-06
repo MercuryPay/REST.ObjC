@@ -3,6 +3,8 @@ REST.ObjC
 
 MercuryPay REST Integration with Objective-C (with ARC)
 
+![alt tag](https://raw.github.com/MercuryPay/REST.ObjC/master/REST.ObjC/images/REST.ObjC.iPad.main.JPG)
+
 ##Step 1: Build Request with Key Value Pairs
   
 Create a NSMutableDictionary and add all the Key Value Pairs.
