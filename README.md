@@ -20,7 +20,6 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
     [dictionary setObject:@"2F8248964608156B2B1745287B44CA90A349905F905514ABE3979D7957F13804705684B1C9D5641C" forKey:@"EncryptedBlock"];
     [dictionary setObject:@"9500030000040C200026" forKey:@"EncryptedKey"];
 ```
-  
 ##Step 2: Process the Transaction
 
 Process the transaction with an NSMutableURLRequest.
@@ -48,7 +47,6 @@ Process the transaction with an NSMutableURLRequest.
     // Process request async
     [NSURLConnection connectionWithRequest:request delegate:self];
 ```
-
 ##Step 3: Parse the Response
 
 Parse the Response using in the connection didReceiveData delegate.
