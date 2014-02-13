@@ -31,7 +31,7 @@ Process the transaction with an NSMutableURLRequest.
     [request setHTTPMethod:@"POST"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
-    
+  
     // Add Authorization header
     NSString *credentials = [NSString stringWithFormat:@"%@:%@", self.merchantID, self.merchantPassword];
     NSString *base64Credentials = [self base64String:credentials];
