@@ -47,6 +47,7 @@
     [dictionary setObject:@"1001" forKey:@"RefNo"];
     [dictionary setObject:@"GitHub REST.ObjC" forKey:@"Memo"];
     [dictionary setObject:@"1.00" forKey:@"Purchase"];
+    [dictionary setObject:@"02" forKey:@"LaneID"];
     [dictionary setObject:@"OneTime" forKey:@"Frequency"];
     [dictionary setObject:@"RecordNumberRequested" forKey:@"RecordNo"];
     [dictionary setObject:@"MagneSafe" forKey:@"EncryptedFormat"];
@@ -64,6 +65,7 @@
     [dictionary setObject:@"1002" forKey:@"RefNo"];
     [dictionary setObject:@"GitHub REST.ObjC" forKey:@"Memo"];
     [dictionary setObject:@"1.00" forKey:@"Purchase"];
+    [dictionary setObject:@"02" forKey:@"LaneID"];    
     [dictionary setObject:@"OneTime" forKey:@"Frequency"];
     [dictionary setObject:@"RecordNumberRequested" forKey:@"RecordNo"];
     [dictionary setObject:@"MagneSafe" forKey:@"EncryptedFormat"];
