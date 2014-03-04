@@ -31,8 +31,6 @@
 		4564F211187DC197000EB8CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4564F210187DC197000EB8CD /* XCTest.framework */; };
 		4564F212187DC197000EB8CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4564F1F1187DC196000EB8CD /* Foundation.framework */; };
 		4564F213187DC197000EB8CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4564F1F5187DC196000EB8CD /* UIKit.framework */; };
-		4564F21B187DC197000EB8CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4564F219187DC197000EB8CD /* InfoPlist.strings */; };
-		4564F21D187DC197000EB8CD /* REST_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4564F21C187DC197000EB8CD /* REST_ObjCTests.m */; };
 		45D3CC14187DC3F500AE392D /* StoryboardMain_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D3CC13187DC3F500AE392D /* StoryboardMain_iPad.storyboard */; };
 		45D3CC16187DC41300AE392D /* StoryboardMain_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D3CC15187DC41300AE392D /* StoryboardMain_iPhone.storyboard */; };
 		45D3CC18187DC75A00AE392D /* merc_logo_iOS_flat.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D3CC17187DC75A00AE392D /* merc_logo_iOS_flat.png */; };
@@ -77,9 +75,6 @@
 		4564F209187DC197000EB8CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4564F20F187DC197000EB8CD /* REST.ObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = REST.ObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4564F210187DC197000EB8CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4564F218187DC197000EB8CD /* REST.ObjCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "REST.ObjCTests-Info.plist"; sourceTree = "<group>"; };
-		4564F21A187DC197000EB8CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4564F21C187DC197000EB8CD /* REST_ObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REST_ObjCTests.m; sourceTree = "<group>"; };
 		45D3CC13187DC3F500AE392D /* StoryboardMain_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardMain_iPad.storyboard; sourceTree = "<group>"; };
 		45D3CC15187DC41300AE392D /* StoryboardMain_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardMain_iPhone.storyboard; sourceTree = "<group>"; };
 		45D3CC17187DC75A00AE392D /* merc_logo_iOS_flat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = merc_logo_iOS_flat.png; sourceTree = "<group>"; };
@@ -135,7 +130,6 @@
 			children = (
 				330B70741885E14700478F61 /* images */,
 				4564F1F7187DC196000EB8CD /* REST.ObjC */,
-				4564F216187DC197000EB8CD /* REST.ObjCTests */,
 				4564F1F0187DC196000EB8CD /* Frameworks */,
 				4564F1EF187DC196000EB8CD /* Products */,
 			);
@@ -184,24 +178,6 @@
 				4564F1FA187DC197000EB8CD /* InfoPlist.strings */,
 				4564F1FD187DC197000EB8CD /* main.m */,
 				4564F1FF187DC197000EB8CD /* REST.ObjC-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4564F216187DC197000EB8CD /* REST.ObjCTests */ = {
-			isa = PBXGroup;
-			children = (
-				4564F21C187DC197000EB8CD /* REST_ObjCTests.m */,
-				4564F217187DC197000EB8CD /* Supporting Files */,
-			);
-			path = REST.ObjCTests;
-			sourceTree = "<group>";
-		};
-		4564F217187DC197000EB8CD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4564F218187DC197000EB8CD /* REST.ObjCTests-Info.plist */,
-				4564F219187DC197000EB8CD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -308,7 +284,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4564F21B187DC197000EB8CD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +304,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4564F21D187DC197000EB8CD /* REST_ObjCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,14 +322,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				4564F1FB187DC197000EB8CD /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		4564F219187DC197000EB8CD /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4564F21A187DC197000EB8CD /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
