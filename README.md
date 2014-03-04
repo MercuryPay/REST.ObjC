@@ -13,6 +13,7 @@ Create a NSMutableDictionary and add all the Key Value Pairs.
     [dictionary setObject:@"1001" forKey:@"RefNo"];
     [dictionary setObject:@"GitHub REST.Obj" forKey:@"Memo"];
     [dictionary setObject:@"1.00" forKey:@"Purchase"];
+    [dictionary setObject:@"02" forKey:@"LaneID"];
     [dictionary setObject:@"OneTime" forKey:@"Frequency"];
     [dictionary setObject:@"RecordNumberRequested" forKey:@"RecordNo"];
     [dictionary setObject:@"MagneSafe" forKey:@"EncryptedFormat"];
