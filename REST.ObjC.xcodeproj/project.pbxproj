@@ -28,23 +28,10 @@
 		4564F202187DC197000EB8CD /* MercuryAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4564F201187DC197000EB8CD /* MercuryAppDelegate.m */; };
 		4564F208187DC197000EB8CD /* MercuryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4564F207187DC197000EB8CD /* MercuryViewController.m */; };
 		4564F20A187DC197000EB8CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4564F209187DC197000EB8CD /* Images.xcassets */; };
-		4564F211187DC197000EB8CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4564F210187DC197000EB8CD /* XCTest.framework */; };
-		4564F212187DC197000EB8CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4564F1F1187DC196000EB8CD /* Foundation.framework */; };
-		4564F213187DC197000EB8CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4564F1F5187DC196000EB8CD /* UIKit.framework */; };
 		45D3CC14187DC3F500AE392D /* StoryboardMain_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D3CC13187DC3F500AE392D /* StoryboardMain_iPad.storyboard */; };
 		45D3CC16187DC41300AE392D /* StoryboardMain_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D3CC15187DC41300AE392D /* StoryboardMain_iPhone.storyboard */; };
 		45D3CC18187DC75A00AE392D /* merc_logo_iOS_flat.png in Resources */ = {isa = PBXBuildFile; fileRef = 45D3CC17187DC75A00AE392D /* merc_logo_iOS_flat.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4564F214187DC197000EB8CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4564F1E6187DC196000EB8CD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4564F1ED187DC196000EB8CD;
-			remoteInfo = REST.ObjC;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		330B707F1885EEC100478F61 /* imgCurl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgCurl.png; sourceTree = "<group>"; };
@@ -73,7 +60,6 @@
 		4564F206187DC197000EB8CD /* MercuryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MercuryViewController.h; sourceTree = "<group>"; };
 		4564F207187DC197000EB8CD /* MercuryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MercuryViewController.m; sourceTree = "<group>"; };
 		4564F209187DC197000EB8CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4564F20F187DC197000EB8CD /* REST.ObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = REST.ObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4564F210187DC197000EB8CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		45D3CC13187DC3F500AE392D /* StoryboardMain_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardMain_iPad.storyboard; sourceTree = "<group>"; };
 		45D3CC15187DC41300AE392D /* StoryboardMain_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardMain_iPhone.storyboard; sourceTree = "<group>"; };
@@ -88,16 +74,6 @@
 				4564F1F4187DC196000EB8CD /* CoreGraphics.framework in Frameworks */,
 				4564F1F6187DC196000EB8CD /* UIKit.framework in Frameworks */,
 				4564F1F2187DC196000EB8CD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4564F20C187DC197000EB8CD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4564F211187DC197000EB8CD /* XCTest.framework in Frameworks */,
-				4564F213187DC197000EB8CD /* UIKit.framework in Frameworks */,
-				4564F212187DC197000EB8CD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				4564F1EE187DC196000EB8CD /* REST.ObjC.app */,
-				4564F20F187DC197000EB8CD /* REST.ObjCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,24 +177,6 @@
 			productReference = 4564F1EE187DC196000EB8CD /* REST.ObjC.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4564F20E187DC197000EB8CD /* REST.ObjCTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4564F223187DC197000EB8CD /* Build configuration list for PBXNativeTarget "REST.ObjCTests" */;
-			buildPhases = (
-				4564F20B187DC197000EB8CD /* Sources */,
-				4564F20C187DC197000EB8CD /* Frameworks */,
-				4564F20D187DC197000EB8CD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4564F215187DC197000EB8CD /* PBXTargetDependency */,
-			);
-			name = REST.ObjCTests;
-			productName = REST.ObjCTests;
-			productReference = 4564F20F187DC197000EB8CD /* REST.ObjCTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -227,13 +184,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Mercury;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Kevin Oliver";
-				TargetAttributes = {
-					4564F20E187DC197000EB8CD = {
-						TestTargetID = 4564F1ED187DC196000EB8CD;
-					};
-				};
 			};
 			buildConfigurationList = 4564F1E9187DC196000EB8CD /* Build configuration list for PBXProject "REST.ObjC" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -249,7 +201,6 @@
 			projectRoot = "";
 			targets = (
 				4564F1ED187DC196000EB8CD /* REST.ObjC */,
-				4564F20E187DC197000EB8CD /* REST.ObjCTests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,13 +231,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4564F20D187DC197000EB8CD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -300,22 +244,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4564F20B187DC197000EB8CD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4564F215187DC197000EB8CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4564F1ED187DC196000EB8CD /* REST.ObjC */;
-			targetProxy = 4564F214187DC197000EB8CD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4564F1FA187DC197000EB8CD /* InfoPlist.strings */ = {
@@ -333,7 +262,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -373,7 +301,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -433,48 +360,6 @@
 			};
 			name = Release;
 		};
-		4564F224187DC197000EB8CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/REST.ObjC.app/REST.ObjC";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "REST.ObjC/REST.ObjC-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "REST.ObjCTests/REST.ObjCTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		4564F225187DC197000EB8CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/REST.ObjC.app/REST.ObjC";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "REST.ObjC/REST.ObjC-Prefix.pch";
-				INFOPLIST_FILE = "REST.ObjCTests/REST.ObjCTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -492,15 +377,6 @@
 			buildConfigurations = (
 				4564F221187DC197000EB8CD /* Debug */,
 				4564F222187DC197000EB8CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4564F223187DC197000EB8CD /* Build configuration list for PBXNativeTarget "REST.ObjCTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4564F224187DC197000EB8CD /* Debug */,
-				4564F225187DC197000EB8CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

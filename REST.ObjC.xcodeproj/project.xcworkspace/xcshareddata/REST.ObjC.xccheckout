@@ -10,31 +10,31 @@
 	<string>REST.ObjC</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E08BF401-62DA-4740-B497-C3020A5C5CE4</key>
-		<string>https://github.com/MercuryPay/REST.ObjC.git</string>
+		<key>60C1AE84AEBA700E69AD72970D3D3CFEA5BBC7B1</key>
+		<string>https://github.com/MercuryPay/rEST.ObjC.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>REST.ObjC/REST.ObjC.xcodeproj/project.xcworkspace</string>
+	<string>REST.ObjC.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E08BF401-62DA-4740-B497-C3020A5C5CE4</key>
-		<string>../../..</string>
+		<key>60C1AE84AEBA700E69AD72970D3D3CFEA5BBC7B1</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/MercuryPay/REST.ObjC.git</string>
+	<string>https://github.com/MercuryPay/rEST.ObjC.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E08BF401-62DA-4740-B497-C3020A5C5CE4</string>
+	<string>60C1AE84AEBA700E69AD72970D3D3CFEA5BBC7B1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E08BF401-62DA-4740-B497-C3020A5C5CE4</string>
+			<string>60C1AE84AEBA700E69AD72970D3D3CFEA5BBC7B1</string>
 			<key>IDESourceControlWCCName</key>
-			<string>REST</string>
+			<string>rEST.ObjC</string>
 		</dict>
 	</array>
 </dict>
