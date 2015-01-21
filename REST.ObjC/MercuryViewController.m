@@ -2,8 +2,8 @@
 //  MercuryViewController.m
 //  REST.ObjC
 //
-//  Created by Kevin Oliver on 1/8/14.
-//  Copyright (c) 2014 Kevin Oliver. All rights reserved.
+//  Created by Mercury Payment Systems, LLC on 1/8/14.
+//  Copyright (c) 2014 Mercury Payement Systems, LLC All rights reserved.
 //
 
 #import "MercuryViewController.h"
