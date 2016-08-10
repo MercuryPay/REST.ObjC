@@ -56,8 +56,8 @@
                                     <action selector="clickGiftReturn:" destination="aZy-NF-TiF" eventType="touchUpInside" id="UcM-31-nTw"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="7XI-R5-9Hr">
-                                <rect key="frame" x="61" y="436" width="198" height="25"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="dgj-Kc-brY">
+                                <rect key="frame" x="33" y="425" width="255" height="32"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -171,6 +171,6 @@ Set Authorization header value to: “Basic [encoded string]”
         <image name="btnCreditSale.png" width="300" height="80"/>
         <image name="btnPrePaidReturn.png" width="300" height="80"/>
         <image name="btnPrePaidSale.png" width="300" height="80"/>
-        <image name="logo.png" width="198" height="25"/>
+        <image name="logo.png" width="333" height="42"/>
     </resources>
 </document>

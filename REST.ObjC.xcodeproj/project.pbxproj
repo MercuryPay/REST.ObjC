@@ -16,7 +16,6 @@
 		3A7505C01A70682600ED4EF4 /* btnCreditSale@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505AE1A70682600ED4EF4 /* btnCreditSale@2x~iphone.png */; };
 		3A7505C11A70682600ED4EF4 /* btnGiftReturn@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505AF1A70682600ED4EF4 /* btnGiftReturn@2x~iphone.png */; };
 		3A7505C21A70682600ED4EF4 /* btnGiftSale@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505B01A70682600ED4EF4 /* btnGiftSale@2x~iphone.png */; };
-		3A7505C31A70682600ED4EF4 /* btnPrePaidReturn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505B11A70682600ED4EF4 /* btnPrePaidReturn.png */; };
 		3A7505C51A70682600ED4EF4 /* btnPrePaidReturn@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505B31A70682600ED4EF4 /* btnPrePaidReturn@2x~iphone.png */; };
 		3A7505C71A70682600ED4EF4 /* btnPrePaidSale@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505B51A70682600ED4EF4 /* btnPrePaidSale@2x~iphone.png */; };
 		3A7505C81A70682600ED4EF4 /* imgCurl.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505B61A70682600ED4EF4 /* imgCurl.png */; };
@@ -32,6 +31,9 @@
 		4564F20A187DC197000EB8CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4564F209187DC197000EB8CD /* Images.xcassets */; };
 		45D3CC14187DC3F500AE392D /* StoryboardMain_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D3CC13187DC3F500AE392D /* StoryboardMain_iPad.storyboard */; };
 		45D3CC16187DC41300AE392D /* StoryboardMain_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D3CC15187DC41300AE392D /* StoryboardMain_iPhone.storyboard */; };
+		C2F5CFFC1D5B880600D99B54 /* logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = C2F5CFF91D5B880600D99B54 /* logo.svg */; };
+		C2F5CFFD1D5B880600D99B54 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F5CFFA1D5B880600D99B54 /* logo@2x.png */; };
+		C2F5CFFE1D5B880600D99B54 /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2F5CFFB1D5B880600D99B54 /* logo@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +48,6 @@
 		3A7505AE1A70682600ED4EF4 /* btnCreditSale@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnCreditSale@2x~iphone.png"; sourceTree = "<group>"; };
 		3A7505AF1A70682600ED4EF4 /* btnGiftReturn@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnGiftReturn@2x~iphone.png"; sourceTree = "<group>"; };
 		3A7505B01A70682600ED4EF4 /* btnGiftSale@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnGiftSale@2x~iphone.png"; sourceTree = "<group>"; };
-		3A7505B11A70682600ED4EF4 /* btnPrePaidReturn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnPrePaidReturn.png; sourceTree = "<group>"; };
 		3A7505B21A70682600ED4EF4 /* btnPrePaidReturn@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnPrePaidReturn@2x~ipad.png"; sourceTree = "<group>"; };
 		3A7505B31A70682600ED4EF4 /* btnPrePaidReturn@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnPrePaidReturn@2x~iphone.png"; sourceTree = "<group>"; };
 		3A7505B41A70682600ED4EF4 /* btnPrePaidSale@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnPrePaidSale@2x~ipad.png"; sourceTree = "<group>"; };
@@ -73,6 +74,9 @@
 		4564F209187DC197000EB8CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		45D3CC13187DC3F500AE392D /* StoryboardMain_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardMain_iPad.storyboard; sourceTree = "<group>"; };
 		45D3CC15187DC41300AE392D /* StoryboardMain_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardMain_iPhone.storyboard; sourceTree = "<group>"; };
+		C2F5CFF91D5B880600D99B54 /* logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = logo.svg; path = REST.ObjC/images/logo.svg; sourceTree = SOURCE_ROOT; };
+		C2F5CFFA1D5B880600D99B54 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "REST.ObjC/images/logo@2x.png"; sourceTree = SOURCE_ROOT; };
+		C2F5CFFB1D5B880600D99B54 /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@3x.png"; path = "REST.ObjC/images/logo@3x.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,9 @@
 		3A7505A71A70682600ED4EF4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C2F5CFF91D5B880600D99B54 /* logo.svg */,
+				C2F5CFFA1D5B880600D99B54 /* logo@2x.png */,
+				C2F5CFFB1D5B880600D99B54 /* logo@3x.png */,
 				3A6DD08A1D5AD6280040BD6B /* logo.png */,
 				3A6DD0881D5AD5090040BD6B /* theStoreCard.png */,
 				3AD3744B1A706C0B009508C2 /* btnCreditReturn@2x~ipad.png */,
@@ -107,7 +114,6 @@
 				3A7505AE1A70682600ED4EF4 /* btnCreditSale@2x~iphone.png */,
 				3A7505AF1A70682600ED4EF4 /* btnGiftReturn@2x~iphone.png */,
 				3A7505B01A70682600ED4EF4 /* btnGiftSale@2x~iphone.png */,
-				3A7505B11A70682600ED4EF4 /* btnPrePaidReturn.png */,
 				3A7505B21A70682600ED4EF4 /* btnPrePaidReturn@2x~ipad.png */,
 				3A7505B31A70682600ED4EF4 /* btnPrePaidReturn@2x~iphone.png */,
 				3A7505B41A70682600ED4EF4 /* btnPrePaidSale@2x~ipad.png */,
@@ -202,6 +208,11 @@
 				CLASSPREFIX = Mercury;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Kevin Oliver";
+				TargetAttributes = {
+					4564F1ED187DC196000EB8CD = {
+						DevelopmentTeam = PUB4QC7GDV;
+					};
+				};
 			};
 			buildConfigurationList = 4564F1E9187DC196000EB8CD /* Build configuration list for PBXProject "REST.ObjC" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -230,9 +241,11 @@
 				3A7505BE1A70682600ED4EF4 /* btnCreditReturn@2x~iphone.png in Resources */,
 				3A7505C51A70682600ED4EF4 /* btnPrePaidReturn@2x~iphone.png in Resources */,
 				3A7505C71A70682600ED4EF4 /* btnPrePaidSale@2x~iphone.png in Resources */,
+				C2F5CFFE1D5B880600D99B54 /* logo@3x.png in Resources */,
+				C2F5CFFD1D5B880600D99B54 /* logo@2x.png in Resources */,
 				3A7505C11A70682600ED4EF4 /* btnGiftReturn@2x~iphone.png in Resources */,
 				3A7505C21A70682600ED4EF4 /* btnGiftSale@2x~iphone.png in Resources */,
-				3A7505C31A70682600ED4EF4 /* btnPrePaidReturn.png in Resources */,
+				C2F5CFFC1D5B880600D99B54 /* logo.svg in Resources */,
 				3A7505CB1A70682600ED4EF4 /* REST.ObjC.iPad.tutorial.JPG in Resources */,
 				3A7505CA1A70682600ED4EF4 /* REST.ObjC.iPad.main.JPG in Resources */,
 				3A6DD0891D5AD5090040BD6B /* theStoreCard.png in Resources */,
@@ -352,11 +365,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "REST.ObjC/REST.ObjC-Prefix.pch";
 				INFOPLIST_FILE = "REST.ObjC/REST.ObjC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -367,11 +383,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "REST.ObjC/REST.ObjC-Prefix.pch";
 				INFOPLIST_FILE = "REST.ObjC/REST.ObjC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
