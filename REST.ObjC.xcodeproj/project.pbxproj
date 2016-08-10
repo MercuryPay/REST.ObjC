@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A6DD0891D5AD5090040BD6B /* theStoreCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A6DD0881D5AD5090040BD6B /* theStoreCard.png */; };
+		3A6DD08B1D5AD6280040BD6B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A6DD08A1D5AD6280040BD6B /* logo.png */; };
 		3A7505BA1A70682600ED4EF4 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505A81A70682600ED4EF4 /* 1.png */; };
 		3A7505BB1A70682600ED4EF4 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505A91A70682600ED4EF4 /* 2.png */; };
 		3A7505BC1A70682600ED4EF4 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505AA1A70682600ED4EF4 /* 3.png */; };
@@ -18,7 +20,6 @@
 		3A7505C51A70682600ED4EF4 /* btnPrePaidReturn@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505B31A70682600ED4EF4 /* btnPrePaidReturn@2x~iphone.png */; };
 		3A7505C71A70682600ED4EF4 /* btnPrePaidSale@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505B51A70682600ED4EF4 /* btnPrePaidSale@2x~iphone.png */; };
 		3A7505C81A70682600ED4EF4 /* imgCurl.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505B61A70682600ED4EF4 /* imgCurl.png */; };
-		3A7505C91A70682600ED4EF4 /* merc_logo_iOS_flat.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505B71A70682600ED4EF4 /* merc_logo_iOS_flat.png */; };
 		3A7505CA1A70682600ED4EF4 /* REST.ObjC.iPad.main.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505B81A70682600ED4EF4 /* REST.ObjC.iPad.main.JPG */; };
 		3A7505CB1A70682600ED4EF4 /* REST.ObjC.iPad.tutorial.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3A7505B91A70682600ED4EF4 /* REST.ObjC.iPad.tutorial.JPG */; };
 		4564F1F2187DC196000EB8CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4564F1F1187DC196000EB8CD /* Foundation.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A6DD0881D5AD5090040BD6B /* theStoreCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = theStoreCard.png; path = REST.ObjC/images/theStoreCard.png; sourceTree = SOURCE_ROOT; };
+		3A6DD08A1D5AD6280040BD6B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = REST.ObjC/images/logo.png; sourceTree = SOURCE_ROOT; };
 		3A7505A81A70682600ED4EF4 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		3A7505A91A70682600ED4EF4 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		3A7505AA1A70682600ED4EF4 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -49,7 +52,6 @@
 		3A7505B41A70682600ED4EF4 /* btnPrePaidSale@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnPrePaidSale@2x~ipad.png"; sourceTree = "<group>"; };
 		3A7505B51A70682600ED4EF4 /* btnPrePaidSale@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnPrePaidSale@2x~iphone.png"; sourceTree = "<group>"; };
 		3A7505B61A70682600ED4EF4 /* imgCurl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgCurl.png; sourceTree = "<group>"; };
-		3A7505B71A70682600ED4EF4 /* merc_logo_iOS_flat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = merc_logo_iOS_flat.png; sourceTree = "<group>"; };
 		3A7505B81A70682600ED4EF4 /* REST.ObjC.iPad.main.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = REST.ObjC.iPad.main.JPG; sourceTree = "<group>"; };
 		3A7505B91A70682600ED4EF4 /* REST.ObjC.iPad.tutorial.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = REST.ObjC.iPad.tutorial.JPG; sourceTree = "<group>"; };
 		3AD3744B1A706C0B009508C2 /* btnCreditReturn@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnCreditReturn@2x~ipad.png"; sourceTree = "<group>"; };
@@ -90,6 +92,8 @@
 		3A7505A71A70682600ED4EF4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3A6DD08A1D5AD6280040BD6B /* logo.png */,
+				3A6DD0881D5AD5090040BD6B /* theStoreCard.png */,
 				3AD3744B1A706C0B009508C2 /* btnCreditReturn@2x~ipad.png */,
 				3AD3744C1A706C0B009508C2 /* btnCreditSale@2x~ipad.png */,
 				3AD3744D1A706C0B009508C2 /* btnPrePaidReturn@2x~ipad.png */,
@@ -109,7 +113,6 @@
 				3A7505B41A70682600ED4EF4 /* btnPrePaidSale@2x~ipad.png */,
 				3A7505B51A70682600ED4EF4 /* btnPrePaidSale@2x~iphone.png */,
 				3A7505B61A70682600ED4EF4 /* imgCurl.png */,
-				3A7505B71A70682600ED4EF4 /* merc_logo_iOS_flat.png */,
 				3A7505B81A70682600ED4EF4 /* REST.ObjC.iPad.main.JPG */,
 				3A7505B91A70682600ED4EF4 /* REST.ObjC.iPad.tutorial.JPG */,
 			);
@@ -232,9 +235,10 @@
 				3A7505C31A70682600ED4EF4 /* btnPrePaidReturn.png in Resources */,
 				3A7505CB1A70682600ED4EF4 /* REST.ObjC.iPad.tutorial.JPG in Resources */,
 				3A7505CA1A70682600ED4EF4 /* REST.ObjC.iPad.main.JPG in Resources */,
-				3A7505C91A70682600ED4EF4 /* merc_logo_iOS_flat.png in Resources */,
+				3A6DD0891D5AD5090040BD6B /* theStoreCard.png in Resources */,
 				3A7505C81A70682600ED4EF4 /* imgCurl.png in Resources */,
 				3A7505BA1A70682600ED4EF4 /* 1.png in Resources */,
+				3A6DD08B1D5AD6280040BD6B /* logo.png in Resources */,
 				3A7505BB1A70682600ED4EF4 /* 2.png in Resources */,
 				3A7505BC1A70682600ED4EF4 /* 3.png in Resources */,
 				45D3CC14187DC3F500AE392D /* StoryboardMain_iPad.storyboard in Resources */,
